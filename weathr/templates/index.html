@@ -1,0 +1,14 @@
+<!doctype html>
+<title>Weathr</title>
+<div class="search-container">
+    <form method="post">
+      <input type="text" placeholder="Search.." name="city">
+      <button type="submit">Go</button>
+    </form>
+</div>
+
+<div class="weather">   
+    <div class="city">{{ weather.city }}</div>
+    <div class="temp">{{weather.temp}}C</div>
+    <div class="description">{{weather.description}}</div>
+</div>
