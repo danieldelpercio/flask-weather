@@ -8,7 +8,7 @@ bp = Blueprint('weather',__name__)
 
 @bp.route('/', methods=['GET','POST'])
 def index():
-    city = 'Las Vegas'
+    city = 'Las Vegas' #initial default city
     
     if request.method == 'POST':
         city = request.form.get('city')
